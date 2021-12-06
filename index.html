@@ -2,83 +2,104 @@
 <html lang="En-US">
   <head>
     <title>GeoCity</title>
+    <meta charset="utf-8">
     <style>
       body {
         background-image: url("spacebackground.jpeg");
+        margin: 0px;
       	background-size: cover;
         background-color: #3A578F8F;
         height: 100vh;
-        display: flex;
-        justify-content: center;
       }
 
       #titlehead {
         position: absolute;
+        left: 0px;
+        top: 0px;
+        width: 100vw;
+        text-align: center;
         color: white;
       }
       #goatz {
-        transform: translateY(400px) translateX(-200px) rotateZ(40deg);
+        position: absolute;
+        left: 67%;
+        top: 45%;
+        transform: rotateZ(35deg);
         color: Maroon;
         text-shadow: 3px 3px;
       }
 
       #rotatinghead {
-        width: 266px;
-        height: 266px;
-        transform: translateY(100px) translateX(-300px);
+        position: absolute;
+        width: 220px;
+        left: 4%;
+        top: 13%
       }
 
       .frame {
-        text-align: center;
         position: absolute;
-        width: 100px;
-        height: 60px;
-        perspective: 215px;
-        z-index: 0;
+        top: 0px;
+        left: calc(50vw - 250px);
+        width: 500px;
+        height: 100vh;
+        perspective: 200px;
       }
 
       .cup {
-        content: "";
         border: .5px solid;
-        width: 100%;
-        height: 100%;
-        transform: rotateX(50deg) translateY(200px);
-        z-index: 0;
+        position: absolute;
+        width: 80%;
+        height: 40%;
+        bottom: 11%;
+        left: calc(50% - 40%);
+        transform: rotateX(50deg);
         background-image: linear-gradient(0deg, rgba(177,183,203,1) 9%, rgba(1,7,28,1) 10%, rgba(197,201,218,1) 11%, rgba(207,211,226,1) 19%, rgba(1,6,28,1) 20%, rgba(228,231,242,1) 21%, rgba(232,234,245,1) 29%, rgba(0,3,17,1) 30%, rgba(235,237,247,1) 31%, rgba(239,241,251,1) 39%, rgba(1,5,24,1) 40%, rgba(241,243,253,1) 41%, rgba(244,246,254,1) 49%, rgba(2,7,27,1) 50%, rgba(244,246,253,1) 51%, rgba(244,246,253,1) 59%, rgba(2,9,32,1) 60%, rgba(244,246,253,1) 61%, rgba(244,246,253,1) 69%, rgba(2,8,31,1) 70%, rgba(244,246,253,1) 71%, rgba(244,246,253,1) 79%, rgba(3,10,38,1) 80%, rgba(244,246,253,1) 81%, rgba(244,246,253,1) 89%, rgba(2,8,29,1) 90%, rgba(244,246,253,1) 91%, rgba(244,246,252,1) 100%);
       }
       #fantastical {
-        content: "";
-        text-align: center;
-        position: absolute;
-        width: 280px;
-        height: 160px;
-        transform: translateY(144px) translateX(2px);
+        position: relative;
+        width: 62%;
+        top: 22%;
+        left: calc(50% - 31%);
       }
       #spacecraft {
+        position: absolute;
         width: 200px;
         height: 100px;
-        transform: translateY(100px) translateX(300px);
+        top: 15%;
+        left: 80%;
+/*         transform: translateY(100px) translateX(300px); */
       }
       #goaty {
+        position: absolute;
         width: 200px;
-        height: 200px;
-        transform: translateY(300px) translateX(390px);
+        top: 28%;
+        left: 64%;
+/*         transform: translateY(300px) translateX(390px); */
+      }
+      #eye {
+        position: absolute;
+        width: 200px;
+        top: 20%;
+        left: 23%;
+      }
+      #socialthoughts {
+        position: absolute;
+        width: 200px
       }
     </style>
   </head>
   <body>
-    <meta charset="utf-8">
     
     <h1 id="titlehead">Andre's Brain Scrapyard/A Modern GeoCity</h1>
     <img id="rotatinghead" src="rotatinghead.gif" alt="rotatinghead-1">
-    <img id="fantastical" src="fantastical.png" alt="fantastical-1">
     <img id="goaty" src="goaty.png" alt="goaty-1">
     <img id="spacecraft" src="spacecraft.png" alt="spacecraft-1">
-    <!---<img id="eye" src="eyeball.png" alt="eye">--->
-    <h1 id = "goatz">DEADGOA7</h2>
-  </body>
-
-  <div class="frame">
+    <img id="eye" src="eyeball.png" alt="eye">
+    <h1 id="goatz">DEADGOA7</h1>
+    <img id="socialthoughts" src="socialthoughts.png" alt="socialthoughts">
+    <div class="frame">
+      <img id="fantastical" src="fantastical.png" alt="fantastical-1">
     <div class="cup"></div>
   </div>
+  </body>
 </html>
